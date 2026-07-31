@@ -10,8 +10,11 @@
 - Vue、React
 - Node.js、JavaScript、TypeScript
 - Go
+- Python、uv、Ruff
 
 React、Node.js、JavaScript 和 TypeScript 主要使用 VS Code 内置语言服务，不额外安装重复的语言扩展。
+
+Python 使用官方 Python 扩展及其附带的 Pylance、Python Debugger 和 Python Environments，Ruff 负责代码诊断与格式化。uv 项目默认使用工作区根目录下的 `.venv`，并开启基础类型检查和自动导入补全。
 
 ## 外观与交互
 
@@ -75,6 +78,8 @@ bash ./scripts/install.sh
 
 `.vscode/extensions.json` 只列出主动选择的扩展。Remote SSH 需要的 `Remote - SSH: Editing Configuration Files` 和 `Remote Explorer` 会作为依赖自动安装。
 
+Python 扩展附带 Pylance、Python Debugger 和 Python Environments，因此不在推荐列表中重复列出这些依赖。配置显式启用 Python Environments，并在 uv 可用时优先使用 uv 管理虚拟环境和安装包。
+
 ## 手动安装
 
 如果不想运行脚本，可以使用 VS Code 打开仓库：
@@ -117,6 +122,8 @@ Configure Display Language
 - Java 项目通过各平台的 `JAVA_HOME` 或项目配置选择 JDK。
 - Maven 项目优先使用仓库内的 Maven Wrapper。
 - Go 工具链通过各平台的 `PATH` 管理。
+- Python 和 uv 通过各平台的 `PATH` 管理，项目环境默认位于 `.venv`。
+- Ruff 的项目规则应放在项目自己的 `pyproject.toml` 或 `ruff.toml` 中。
 - VS Code Settings Sync 可继续用于个人设备之间的日常同步，本仓库只发布经过检查的公开配置快照。
 
 ## 隐私与安全

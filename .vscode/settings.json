@@ -28,9 +28,24 @@
     "**/node_modules": true,
     "**/target": true,
     "**/dist": true,
-    "**/build": true
+    "**/build": true,
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "**/.mypy_cache": true
   },
   "git.autofetch": false,
+  "python.useEnvironmentsExtension": true,
+  "python-envs.alwaysUseUv": true,
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
   "[javascript][javascriptreact][typescript][typescriptreact][vue][json][jsonc][css][scss][html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
