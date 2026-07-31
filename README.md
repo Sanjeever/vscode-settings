@@ -14,7 +14,7 @@
 
 React、Node.js、JavaScript 和 TypeScript 主要使用 VS Code 内置语言服务，不额外安装重复的语言扩展。
 
-Python 使用官方 Python 扩展及其附带的 Pylance、Python Debugger 和 Python Environments，Ruff 负责代码诊断与格式化。uv 项目默认使用工作区根目录下的 `.venv`，并开启基础类型检查和自动导入补全。
+Python 使用官方 Python 扩展及其附带的 Pylance、Python Debugger 和 Python Environments，Ruff 负责代码诊断与格式化。Python Environments 会自动发现项目中的 `.venv`，全局配置不预设解释器路径，并开启基础类型检查和自动导入补全。
 
 ## 外观与交互
 
@@ -122,7 +122,7 @@ Configure Display Language
 - Java 项目通过各平台的 `JAVA_HOME` 或项目配置选择 JDK。
 - Maven 项目优先使用仓库内的 Maven Wrapper。
 - Go 工具链通过各平台的 `PATH` 管理。
-- Python 和 uv 通过各平台的 `PATH` 管理，项目环境默认位于 `.venv`。
+- Python 和 uv 通过各平台的 `PATH` 管理；Python 项目可将环境放在 `.venv`，由 Python Environments 自动发现。
 - Ruff 的项目规则应放在项目自己的 `pyproject.toml` 或 `ruff.toml` 中。
 - VS Code Settings Sync 可继续用于个人设备之间的日常同步，本仓库只发布经过检查的公开配置快照。
 
