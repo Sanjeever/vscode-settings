@@ -1,4 +1,5 @@
 {
+  "chat.disableAIFeatures": true,
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Vitesse Dark Soft",
   "workbench.iconTheme": "catppuccin-mocha",
