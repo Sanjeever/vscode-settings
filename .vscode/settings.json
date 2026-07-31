@@ -1,0 +1,38 @@
+{
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Vitesse Dark Soft",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.productIconTheme": "icons-carbon",
+  "editor.fontFamily": "JetBrains Mono, SFMono-Regular, Menlo, Monaco, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "off",
+  "editor.minimap.enabled": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.stickyScroll.enabled": true,
+  "diffEditor.wordWrap": "on",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.autoSave": "off",
+  "editor.formatOnSave": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/target/**": true,
+    "**/dist/**": true,
+    "**/build/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/target": true,
+    "**/dist": true,
+    "**/build": true
+  },
+  "git.autofetch": false,
+  "[javascript][javascriptreact][typescript][typescriptreact][vue][json][jsonc][css][scss][html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "redhat.telemetry.enabled": true
+}

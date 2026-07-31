@@ -1,0 +1,21 @@
+{
+  "recommendations": [
+    "antfu.theme-vitesse",
+    "antfu.icons-carbon",
+    "catppuccin.catppuccin-vsc-icons",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "golang.go",
+    "isudox.vscode-jetbrains-keybindings",
+    "ms-ceintl.vscode-language-pack-zh-hans",
+    "ms-vscode-remote.remote-ssh",
+    "redhat.java",
+    "redhat.vscode-yaml",
+    "vmware.vscode-spring-boot",
+    "vscjava.vscode-maven",
+    "vue.volar"
+  ]
+}

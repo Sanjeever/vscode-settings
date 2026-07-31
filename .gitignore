@@ -1,0 +1,14 @@
+*
+
+!.gitignore
+!.gitattributes
+!LICENSE
+!README.md
+
+!.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+
+!scripts/
+!scripts/install.ps1
+!scripts/install.sh
