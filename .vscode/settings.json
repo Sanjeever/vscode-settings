@@ -11,6 +11,7 @@
   "editor.minimap.enabled": true,
   "editor.inlayHints.enabled": "on",
   "editor.stickyScroll.enabled": true,
+  "editor.gotoLocation.multipleDefinitions": "goto",
   "diffEditor.wordWrap": "on",
   "diffEditor.ignoreTrimWhitespace": false,
   "files.autoSave": "off",

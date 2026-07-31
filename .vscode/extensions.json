@@ -2,6 +2,10 @@
   "recommendations": [
     "antfu.theme-vitesse",
     "antfu.icons-carbon",
+    "antfu.goto-alias",
+    "antfu.file-nesting",
+    "antfu.smart-clicks",
+    "antfu.where-am-i",
     "catppuccin.catppuccin-vsc-icons",
     "bradlc.vscode-tailwindcss",
     "charliermarsh.ruff",
