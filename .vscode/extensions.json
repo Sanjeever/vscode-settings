@@ -5,6 +5,7 @@
     "catppuccin.catppuccin-vsc-icons",
     "bradlc.vscode-tailwindcss",
     "charliermarsh.ruff",
+    "Dart-Code.flutter",
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
     "editorconfig.editorconfig",
@@ -16,6 +17,8 @@
     "ms-vscode-remote.remote-ssh",
     "redhat.java",
     "redhat.vscode-yaml",
+    "rust-lang.rust-analyzer",
+    "vadimcn.vscode-lldb",
     "vmware.vscode-spring-boot",
     "vscjava.vscode-maven",
     "vue.volar"

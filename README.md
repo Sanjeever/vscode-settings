@@ -11,10 +11,14 @@
 - Node.js、JavaScript、TypeScript
 - Go
 - Python、uv、Ruff
+- Rust、Cargo
+- Dart、Flutter
 
 React、Node.js、JavaScript 和 TypeScript 主要使用 VS Code 内置语言服务，不额外安装重复的语言扩展。
 
 Python 使用官方 Python 扩展及其附带的 Pylance、Python Debugger 和 Python Environments，Ruff 负责代码诊断与格式化。Python Environments 会自动发现项目中的 `.venv`，全局配置不预设解释器路径，并开启基础类型检查和自动导入补全。
+
+Rust 使用 rust-analyzer 提供导航、诊断和格式化，并通过 CodeLLDB 支持调试。Flutter 扩展负责 Dart 和 Flutter 的导航、调试与 Hot Reload；其依赖的 Dart 扩展会自动安装。配置不预设 Rust 或 Flutter SDK 路径。
 
 ## 外观与交互
 
@@ -80,6 +84,8 @@ bash ./scripts/install.sh
 
 Python 扩展附带 Pylance、Python Debugger 和 Python Environments，因此不在推荐列表中重复列出这些依赖。配置显式启用 Python Environments，并在 uv 可用时优先使用 uv 管理虚拟环境和安装包。
 
+Flutter 扩展会自动安装 Dart 扩展，因此推荐列表中不重复列出 Dart。CodeLLDB 用于 Rust 调试；只需要语言导航和诊断时，rust-analyzer 本身即可工作。
+
 ## 手动安装
 
 如果不想运行脚本，可以使用 VS Code 打开仓库：
@@ -116,7 +122,7 @@ Configure Display Language
 
 ## 跨平台说明
 
-配置中不包含 JDK、Maven、Go、终端或字体的本机绝对路径。
+配置中不包含 JDK、Maven、Go、Rust、Flutter、终端或字体的本机绝对路径。
 
 - Windows 和 macOS 应分别安装 JetBrains Mono。
 - Java 项目通过各平台的 `JAVA_HOME` 或项目配置选择 JDK。
@@ -124,6 +130,8 @@ Configure Display Language
 - Go 工具链通过各平台的 `PATH` 管理。
 - Python 和 uv 通过各平台的 `PATH` 管理；Python 项目可将环境放在 `.venv`，由 Python Environments 自动发现。
 - Ruff 的项目规则应放在项目自己的 `pyproject.toml` 或 `ruff.toml` 中。
+- Rust 工具链通过 rustup 和各平台的 `PATH` 管理，项目规则放在自己的 `Cargo.toml` 或 Clippy 配置中。
+- Flutter 和 Dart SDK 通过项目目录、`FLUTTER_ROOT` 或各平台的 `PATH` 自动发现，不在全局配置中固定路径。
 - VS Code Settings Sync 可继续用于个人设备之间的日常同步，本仓库只发布经过检查的公开配置快照。
 
 ## 隐私与安全
