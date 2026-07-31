@@ -4,6 +4,9 @@
   "workbench.colorTheme": "Vitesse Dark Soft",
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.productIconTheme": "icons-carbon",
+  "workbench.editor.customLabels.patterns": {
+    "**/index.vue": "${dirname}⚡"
+  },
   "editor.fontFamily": "JetBrains Mono, SFMono-Regular, Menlo, Monaco, Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
