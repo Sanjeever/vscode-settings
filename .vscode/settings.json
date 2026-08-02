@@ -10,7 +10,7 @@
   "editor.fontFamily": "JetBrains Mono, SFMono-Regular, Menlo, Monaco, Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
-  "editor.wordWrap": "off",
+  "editor.wordWrap": "on",
   "editor.minimap.enabled": true,
   "editor.inlayHints.enabled": "on",
   "editor.stickyScroll.enabled": true,
