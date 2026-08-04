@@ -4,6 +4,7 @@
   "workbench.colorTheme": "Vitesse Dark Soft",
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.productIconTheme": "icons-carbon",
+  "workbench.experimental.modernUI": false,
   "workbench.editor.customLabels.patterns": {
     "**/index.vue": "${dirname}⚡"
   },
