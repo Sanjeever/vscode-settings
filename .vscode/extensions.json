@@ -13,6 +13,7 @@
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
     "editorconfig.editorconfig",
+    "tamasfe.even-better-toml",
     "esbenp.prettier-vscode",
     "golang.go",
     "isudox.vscode-jetbrains-keybindings",
