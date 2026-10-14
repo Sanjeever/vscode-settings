@@ -5,6 +5,7 @@
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.experimental.modernUI": false,
+  "workbench.list.openMode": "doubleClick",
   "workbench.editor.customLabels.patterns": {
     "**/index.vue": "${dirname}⚡"
   },
@@ -24,6 +25,7 @@
     ".env.*": "shellscript"
   },
   "editor.formatOnSave": false,
+  "explorer.compactFolders": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "files.watcherExclude": {

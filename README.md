@@ -31,6 +31,8 @@ Rust 使用 rust-analyzer 提供导航、诊断和格式化，并通过 CodeLLDB
 | 快捷键 | JetBrains |
 | 界面语言 | 简体中文 |
 
+列表中的项目通过双击打开（`workbench.list.openMode: "doubleClick"`）。资源管理器关闭紧凑文件夹显示（`explorer.compactFolders: false`），逐层展示文件夹。
+
 配置开启了 minimap、inlay hints 和 sticky scroll。自动保存与保存时格式化默认关闭，避免代码审查过程中产生意外修改或无关 diff。
 
 配置同时集成了 Goto Alias、File Nesting Updater、Smart Clicks 和 Where Am I。它们分别用于跟踪自动导入声明的真实定义、维护文件嵌套规则、增强双击选区，以及在状态栏识别和切换当前项目。Goto Alias 遇到多个定义时会直接跳转；File Nesting Updater 保留默认的更新提示，确认后才应用上游规则。
